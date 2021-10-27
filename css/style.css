@@ -103,6 +103,7 @@ body {
     margin-right: auto;
     word-break:break-word;
     color: black;
+    overflow-x: hidden;
 }
 
 .flex-header {
@@ -282,7 +283,7 @@ aside h2 {
 
 .contact:hover {
     transition: transform 0.5s ease-out;
-    transform: scale(1.15);
+    transform: scale(1.15) translate(-20%, -10%);
 }
 
 .contact h2:hover {
@@ -366,7 +367,7 @@ aside h2 {
 
 .skills:hover {
     transition: transform 0.5s ease-out;
-    transform: scale(1.15);
+    transform: scale(1.15)translate(-10%, 0%);
 }
 
 .skills h2:hover{
