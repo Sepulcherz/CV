@@ -760,7 +760,7 @@ li:not(:last-child) {
 footer {
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: white;
     -webkit-border-radius: 39px;
     -moz-border-radius: 39px;
