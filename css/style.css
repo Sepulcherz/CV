@@ -902,4 +902,10 @@ footer img:hover {
     body {
     width: 100%;
     }
+    #end > p:hover{
+    transform: scale(3)
+    }
+    footer {
+    justify-content: space-evenly;
+    }
 }
