@@ -45,6 +45,10 @@ header:hover{
     transition: all 0.5s ease;
 }
 
+#mobile{
+    display: none;
+}
+
 .btn-primary > span {
     font-size: 1.8vmin;
     line-height: 1px;
@@ -903,22 +907,40 @@ footer img:hover {
     width: 100%;
     overflow-x: visible;
     }
+    #end > p{
+    font-size: 1.4vmin;
+    }
     #end > p:hover{
-    transform: scale(3)
+    transform: scale(1)
     }
     footer {
     justify-content: space-evenly;
     }
     .contact:hover {
     transition: transform 0.5s ease-out;
-    transform: scale(1.15);
+    transform: scale(1);
     }
+    .contact p:hover {
+        transition: transform 0.5s ease-out;
+        transform: scale(1.05);
+        }
     .bigartheader:hover {
     transition: transform 0.5s ease-out;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    }
+    .skills:hover{
+    transition: transform 0.5s ease-out;
+    transform: scale(1);  
     }
     .bigartheader h2:hover {
         transition: transform 0.5s ease-out;
         transform: scale(1);
     }
+    #fullscreen {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+    }
+
 }
