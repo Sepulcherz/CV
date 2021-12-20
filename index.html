@@ -1,258 +1,364 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <title>Curriculum Vitæ</title>
-    <meta name="description" content="Un simple CV fait avec amour">
-    <meta name="author" content="Matthias DEVAUX">
-</head>
+    <meta name="description" content="Un simple CV fait avec amour" />
+    <meta name="author" content="Matthias DEVAUX" />
+  </head>
 
-<body class="animate__animated animate__backInDown">
-    <audio autoplay src="assets/sounds/pls.mp3">
-    </audio>
+  <body class="animate__animated animate__backInDown">
+    <audio autoplay src="assets/sounds/pls.mp3"></audio>
     <header>
-        <div class="flex-header">
-            <div class="htop" id="app">
-                <h1>Matthias DEVAUX</h1><br>
-                <div class="htoph2">
-                    <h2>développeur web en devenir</h2>
-                </div>
-            </div>
-            <img src="assets/img/phototest.gif" alt="Une photo de moi" title="Une photo de moi" id="draggablephoto">
+      <div class="flex-header">
+        <div class="htop" id="app">
+          <div class="text"></div>
+          <div class="phrases" style="display: none">
+            <p>Oh!</p>
+            <p>Bonjour.</p>
+            <p>Hello.</p>
+            <p>Ni Hao.</p>
+            <p>
+              Je m'appelle Matthias DEVAUX et je vous souhaite la bienvenue sur
+              mon C.V "intéractif".
+            </p>
+            <p>
+              Ce n'est pas quelque chose de très poussé mais j'espère que vous
+              le trouverez aussi amusant que moi.
+            </p>
+            <p>Bonne visite!</p>
+            <p>Matthias DEVAUX - développeur web en devenir</p>
+          </div>
         </div>
+        <img
+          src="assets/img/phototest.gif"
+          alt="Une photo de moi"
+          title="Une photo de moi"
+          id="draggablephoto"
+        />
+      </div>
     </header>
 
     <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            Cliquez-moi!<br>
-            <span id="fullscreen">(et amusez-vous en déplaçant <br>les différents éléments <br>dans tous les sens!)</span>
-            <span id="mobile"></span>
-        </button>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        Cliquez-moi!<br />
+        <span id="fullscreen"
+          >(et amusez-vous en déplaçant <br />les différents éléments <br />dans
+          tous les sens!)</span
+        >
+        <span id="mobile"></span>
+      </button>
     </p>
 
     <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            <a href="#bot" id="fleche" title="Aller en bas de la page">
-                <div class="btn btn-primary" id="btn1">
-                    ↓
+      <div class="card card-body">
+        <a href="#bot" id="fleche" title="Aller en bas de la page">
+          <div class="btn btn-primary" id="btn1">↓</div>
+        </a>
+
+        <main>
+          <aside>
+            <div class="contact">
+              <h2>CONTACT & INFOS</h2>
+              <br />
+              <div id="contp">
+                <p>
+                  <span class="contunder">Né le :</span><br /><br />21/12/1990
+                </p>
+                <br />
+                <p>
+                  <span class="contunder">Adresse :</span> <br /><br />4 place
+                  de la poissonnerie, Maison des têtes, 83000 TOULON
+                </p>
+                <br />
+                <p>
+                  <span class="contunder">Numéro de téléphone :</span>
+                  <br /><br />06 48 20 36 36
+                </p>
+                <br />
+                <p>
+                  <span class="contunder">Mail :</span>
+                  <br /><br />mr_devaux@hotmail.fr
+                </p>
+                <br />
+              </div>
+            </div>
+            <div class="skills">
+              <h2>SKILLS:</h2>
+              <div id="p_prog">
+                <p>HTML</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="85"
+                    title="85%, encore quelques notions à ancrer!"
+                  ></progress>
                 </div>
-            </a>
-
-            <main>
-
-                <aside>
-                    <div class="contact">
-                        <h2>CONTACT & INFOS</h2><br>
-                        <div id="contp">
-                            <p><span class="contunder">Né le :</span><br><br>21/12/1990</p><br>
-                            <p><span class="contunder">Adresse :</span> <br><br>4 place de la poissonnerie, Maison des
-                                têtes, 83000 TOULON</p><br>
-                            <p><span class="contunder">Numéro de téléphone :</span> <br><br>06 48 20 36 36</p><br>
-                            <p><span class="contunder">Mail :</span> <br><br>mr_devaux@hotmail.fr</p><br>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h2>SKILLS:</h2>
-                        <div id="p_prog">
-                            <p>HTML</p>
-                            <div class="progressbar"><progress max="100" value="85"
-                                    title="85%, encore quelques notions à ancrer!"></progress></div><br>
-                            <p>CSS</p>
-                            <div class="progressbar"><progress max="100" value="70"
-                                    title="70%, trop de divs!"></progress>
-                            </div><br>
-                            <p>JS</p>
-                            <div class="progressbar"><progress max="100" value="5" title="5%, un vrai noob"></progress>
-                            </div><br>
-                            <p>PHP</p>
-                            <div class="progressbar"><progress max="100" value="0"
-                                    title="0%, tout à apprendre!"></progress>
-                            </div><br>
-                            <p>MySQL</p>
-                            <div class="progressbar"><progress max="100" value="0"
-                                    title="0%, tout à apprendre!"></progress>
-                            </div><br>
-                            <p>Coffee Brewing</p>
-                            <div class="progressbar"><progress max="100" value="100"
-                                    title="100%, Je maîtrise les cafetières Italiennes et celles dernier cri!"></progress>
-                            </div><br>
-                        </div>
-                    </div>
-                </aside>
-                <div class="bigarticle">
-                    <article>
-                        <div class="bigartheader">
-                            <header>
-                                <h2>Parcours & formation</h2>
-                            </header>
-                        </div>
-                        <article>
-                            <div class="article0">
-                                <div class="description">
-
-                                    <h2>Octobre 2021 à Juin 2022 : Formation développeur web / web mobile</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Apprentissage du métier de développeur web au sein du centre de formation
-                                        pour
-                                        adultes
-                                        de l'AFPA à la valette du var</h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article1">
-                                <div class="description">
-                                    <h2>2017 : Technicien de support helpdesk (first line analyst)</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Résolution de différents problèmes liés au bon fonctionnement chez
-                                        computacenter
-                                    </h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article2">
-                                <div class="description">
-
-                                    <h2>Juin 2015 : Open Classroom</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Validation des cours HTML et CSS</h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article3">
-                                <div class="description">
-                                    <h2>Décembre 2010 - Novembre 2011 : Téléconseiller / Chargé de clientèle</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Appels entrants/sortants pour le service résiliation d'SFR</h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article4">
-                                <div class="description">
-                                    <h2>De 2008 à 2010 : Ouvrier paysagiste</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Cueillette et conditionnement d'Anthuriums au "soleil du var", puis
-                                        manoeuvre
-                                        sur
-                                        divers
-                                        chantiers pour particuliers</h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article5">
-                                <div class="description">
-                                    <h2>De Janvier à Juin 2010 :</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>Préparation aux beaux-arts à l'école de La Seyne-sur-mer</h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article6">
-                                <div class="description">
-                                    <h2>Années scolaires 2006 - 2008 :</h2>
-                                </div>
-                                <div class="content">
-                                    <h3>BEPA (BEP Agricole spécialisation florale et légumière)</h3>
-                                </div>
-                            </div>
-                        </article>
-                    </article>
-                    <div class="sect_bottom">
-                        <section>
-
-                            <h2>Loisirs :</h2><br>
-                            <ul>
-                                <li>
-                                    <h3>Video G@ming</h3>
-                                </li>
-                                <li>
-                                    <h3>Art numérique</h3>
-                                </li>
-                                <li>
-                                    <h3>Animation Japonaise & Mangas</h3>
-                                </li>
-                                <li>
-                                    <h3>Coding</h3>
-                                </li>
-                                <li>
-                                    <h3>Caresser des animaux</h3>
-                                </li>
-                            </ul>
-                        </section>
-
-                    </div>
+                <br />
+                <p>CSS</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="70"
+                    title="70%, trop de divs!"
+                  ></progress>
                 </div>
-            </main>
-            <a href="#app" id="fleche2" title="Aller en haut de la page">
-                <div class="btn btn-primary" id="btn3">
-
-                    ↑
-
+                <br />
+                <p>JS</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="5"
+                    title="5%, un vrai noob"
+                  ></progress>
                 </div>
-            </a>
-        </div>
-        <p id="pbtn2" title="Refermer le contenu">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample" id="btn2">
-                ^ <br>
-            </button>
-        </p>
+                <br />
+                <p>PHP</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="0"
+                    title="0%, tout à apprendre!"
+                  ></progress>
+                </div>
+                <br />
+                <p>MySQL</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="0"
+                    title="0%, tout à apprendre!"
+                  ></progress>
+                </div>
+                <br />
+                <p>Coffee Brewing</p>
+                <div class="progressbar">
+                  <progress
+                    max="100"
+                    value="100"
+                    title="100%, Je maîtrise les cafetières Italiennes et celles dernier cri!"
+                  ></progress>
+                </div>
+                <br />
+              </div>
+            </div>
+          </aside>
+          <div class="bigarticle">
+            <article>
+              <div class="bigartheader">
+                <header>
+                  <h2>Parcours & formation</h2>
+                </header>
+              </div>
+              <article>
+                <div class="article0">
+                  <div class="description">
+                    <h2>
+                      Octobre 2021 à Juin 2022 : Formation développeur web / web
+                      mobile
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      Apprentissage du métier de développeur web au sein du
+                      centre de formation pour adultes de l'AFPA à la valette du
+                      var
+                    </h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article1">
+                  <div class="description">
+                    <h2>
+                      2017 : Technicien de support helpdesk (first line analyst)
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      Résolution de différents problèmes liés au bon
+                      fonctionnement chez computacenter
+                    </h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article2">
+                  <div class="description">
+                    <h2>Juin 2015 : Open Classroom</h2>
+                  </div>
+                  <div class="content">
+                    <h3>Validation des cours HTML et CSS</h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article3">
+                  <div class="description">
+                    <h2>
+                      Décembre 2010 - Novembre 2011 : Téléconseiller / Chargé de
+                      clientèle
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      Appels entrants/sortants pour le service résiliation d'SFR
+                    </h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article4">
+                  <div class="description">
+                    <h2>De 2008 à 2010 : Ouvrier paysagiste</h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      Cueillette et conditionnement d'Anthuriums au "soleil du
+                      var", puis manoeuvre sur divers chantiers pour
+                      particuliers
+                    </h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article5">
+                  <div class="description">
+                    <h2>De Janvier à Juin 2010 :</h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      Préparation aux beaux-arts à l'école de La Seyne-sur-mer
+                    </h3>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="article6">
+                  <div class="description">
+                    <h2>Années scolaires 2006 - 2008 :</h2>
+                  </div>
+                  <div class="content">
+                    <h3>
+                      BEPA (BEP Agricole spécialisation florale et légumière)
+                    </h3>
+                  </div>
+                </div>
+              </article>
+            </article>
+            <div class="sect_bottom">
+              <section>
+                <h2>Loisirs :</h2>
+                <br />
+                <ul>
+                  <li>
+                    <h3>Video G@ming</h3>
+                  </li>
+                  <li>
+                    <h3>Art numérique</h3>
+                  </li>
+                  <li>
+                    <h3>Animation Japonaise & Mangas</h3>
+                  </li>
+                  <li>
+                    <h3>Coding</h3>
+                  </li>
+                  <li>
+                    <h3>Caresser des animaux</h3>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </main>
+        <a href="#app" id="fleche2" title="Aller en haut de la page">
+          <div class="btn btn-primary" id="btn3">↑</div>
+        </a>
+      </div>
+      <p id="pbtn2" title="Refermer le contenu">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          id="btn2"
+        >
+          ^ <br />
+        </button>
+      </p>
     </div>
 
     <footer id="bot">
-        <p>Liens externes :</p>
-        <div id="footimg">
-            <p><a href="https://www.linkedin.com/in/matthias-devaux-768740188/" target="_blank"><img
-                        src="assets/img/linkedin.png" alt="linkedin profile" title="Vers mon profil linkedin"></a>
-            </p>
-            <p><a href="https://github.com/Sepulcherz" target="_blank"><img src="assets/img/git.png"
-                        alt="github profile" title="Vers ma page github"></a>
-            </p>
-        </div>
+      <p>Liens externes :</p>
+      <div id="footimg">
+        <p>
+          <a
+            href="https://www.linkedin.com/in/matthias-devaux-768740188/"
+            target="_blank"
+            ><img
+              src="assets/img/linkedin.png"
+              alt="linkedin profile"
+              title="Vers mon profil linkedin"
+          /></a>
+        </p>
+        <p>
+          <a href="https://github.com/Sepulcherz" target="_blank"
+            ><img
+              src="assets/img/git.png"
+              alt="github profile"
+              title="Vers ma page github"
+          /></a>
+        </p>
+      </div>
     </footer>
 
     <div id="end">
-        <p>© Matthias DEVAUX & Team DWWM AFPA de la Valette du var 2021-2022</p>
+      <p>© Matthias DEVAUX & Team DWWM AFPA de la Valette du var 2021-2022</p>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <script src="js/script.js"></script>
-
-</body>
-
+    <script type="module" src="js/Type.js"></script>
+  </body>
 </html>

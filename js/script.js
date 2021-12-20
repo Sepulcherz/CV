@@ -101,36 +101,6 @@ $(function() {
     });
 })
 
-var app = document.getElementById('app');
-
-var typewriter = new Typewriter(app, {
-    loop: true
-});
-  
-typewriter.typeString('Oh!')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('Bonjour.')
-    .pauseFor(1000)
-    .deleteAll()
-    .typeString('Hi.')
-    .pauseFor(1000)
-    .deleteAll()
-    .typeString('Ni Hao.')
-    .pauseFor(1000)
-    .deleteAll()
-    .pauseFor(4000)
-    .typeString('Je m\'appelle <strong>Matthias DEVAUX.</strong>')
-    .pauseFor(2000)
-    .deleteChars(7)
-    .typeString('et je vous souhaite la bienvenue sur mon C.V "intéractif" ')
-    .pauseFor(2500)
-    .typeString('J\'espère que vous le trouverez aussi amusant que moi. ')
-    .pauseFor(2500)
-    .typeString('Bonne visite!')
-    .pauseFor(3000)
-    .start();
-
 function newGradient() {
     var randomColor1 = "#" + Math.floor(Math.random()*16777215).toString(16),
         randomColor2 = "#" + Math.floor(Math.random()*16777215).toString(16);
