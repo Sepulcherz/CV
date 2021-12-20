@@ -8,6 +8,11 @@
       font-family: "PressStart2P-Regular"; src: url("../assets/fonts/PressStart2P-Regular.ttf");
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 body > p {
     overflow: visible;
     margin-top: 5%;
